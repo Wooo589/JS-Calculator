@@ -4,14 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <title>JS Calculator</title>
     </head>
     <body>
         <div class="container">
             <main id="main">
-                <table>
-                    <thead>
+                <table id="table">
+                    <thead id="input-part">
                         <tr>
                             <td colspan="4">    
                             <label for="numero"></label>
@@ -19,74 +23,74 @@
                             </td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="btn-part">
                         <tr>
-                            <td>
+                            <td class="btn-area">
                                 <button id="C" onclick="limpar()">C</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="del()">DEL</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="porcentagem()">%</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="raiz()">√</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(7)">7</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(8)">8</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(9)">9</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(' / ')">/</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(4)">4</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(5)">5</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(6)">6</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(' * ')">*</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(1)">1</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(2)">2</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(3)">3</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(' - ')">-</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero('.')">.</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(0)">0</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button id="resultado" onclick="resultado()">=</button>
                             </td>
-                            <td>
+                            <td class="btn-area">
                                 <button onclick="numero(' + ')">+</button>
                             </td>
                         </tr>
