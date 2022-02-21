@@ -7,6 +7,8 @@
     --red-hover: rgba(136, 8, 8, 0.5);
     --yellow: #d6c809;
     --yellow-hover: rgba(214, 200, 9, 0.5);
+    --black: #28282B;
+    --white: #F9F6EE;
 }
 
 * {
@@ -97,6 +99,44 @@ button:hover {
 #resultado:hover {
     background: var(--red-hover);
 }
+
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--gray);
+    color: var(--white);
+    padding: 2rem;       
+}
+
+#social-icons{
+    display: inline-flex;
+    list-style: none;
+}
+
+.media-icon {
+    padding: 1.5rem 2rem;
+}
+
+#linkedin {
+    fill: var(--white);
+}
+
+#linkedin:hover {
+    fill: var(--black);
+    transition: 0.6s;
+}
+
+#github {
+    fill: var(--white);
+}
+
+#github:hover {
+    fill: var(--black);
+    transition: 0.6s;
+}
+
  @media all and (max-width: 71.875em){
 
     #table { 
